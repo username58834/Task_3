@@ -14,9 +14,9 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button x:Name="BtnExit" Content="Exit" HorizontalAlignment="Left" Height="62" Margin="554,324,0,0" VerticalAlignment="Top" Width="157" Background="#FF8BDCC2" Click="BtnExit_Click" FontSize="20" FontFamily="Times New Roman"/>
-        <TextBox x:Name="Txt_C" HorizontalAlignment="Left" Height="34" Margin="155,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="20" FontFamily="Times New Roman" MaxLength="19"/>
-        <TextBox x:Name="Txt_D" HorizontalAlignment="Left" Height="34" Margin="513,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="20" FontFamily="Times New Roman" MaxLength="19"/>
-        <Button x:Name="BtnCount" Content="Count" HorizontalAlignment="Left" Height="62" Margin="155,319,0,0" VerticalAlignment="Top" Width="157" Background="#FF8BDCC2" Click="BtnCount_Click" FontSize="20" FontFamily="Times New Roman"/>
+        <TextBox x:Name="Txt_C" HorizontalAlignment="Left" Height="34" Margin="155,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="20" FontFamily="Times New Roman" MaxLength="19" TextChanged="Txt_C_TextChanged"/>
+        <TextBox x:Name="Txt_D" HorizontalAlignment="Left" Height="34" Margin="513,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="20" FontFamily="Times New Roman" MaxLength="19" TextChanged="Txt_D_TextChanged"/>
+        <Button x:Name="BtnCount" Content="Count" HorizontalAlignment="Left" Height="62" Margin="155,319,0,0" VerticalAlignment="Top" Width="157" Background="#FF8BDCC2" Click="BtnCount_Click" FontSize="20" FontFamily="Times New Roman" IsEnabled="False"/>
         <TextBox x:Name="Txt_Result" HorizontalAlignment="Left" Height="34" Margin="405,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" IsEnabled="False" FontSize="20" FontFamily="Times New Roman"/>
         <Label x:Name="Lbl_Result" Content="2c+82d=" HorizontalAlignment="Left" Height="44" Margin="315,217,0,0" VerticalAlignment="Top" Width="85" FontSize="20" FontFamily="Times New Roman"/>
         <Label x:Name="Lbl_C" Content="c=" HorizontalAlignment="Left" Height="44" Margin="119,145,0,0" VerticalAlignment="Top" Width="31" FontSize="20" FontFamily="Times New Roman"/>

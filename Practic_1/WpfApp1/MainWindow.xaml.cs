@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WpfApp1;
 
@@ -40,5 +41,28 @@ public partial class MainWindow : Window
         {
             MessageBox.Show(ex.Message);
         }
+    }
+
+    public void AfterChanging()
+    {
+        if(Txt_C.Text.Length == 0 || Txt_D.Text.Length == 0)
+        {
+            BtnCount.IsEnabled = false;
+        }
+        else
+        {
+            BtnCount.IsEnabled = true;
+        }
+
+        Txt_Result.Text = "";
+    }
+    private void Txt_C_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        AfterChanging();
+    }
+
+    private void Txt_D_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        AfterChanging();
     }
 }
